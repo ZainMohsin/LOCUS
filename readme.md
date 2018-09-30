@@ -56,4 +56,4 @@ This project is licensed under the MIT License.
 * [Life360](https://www.life360.com/)
 
 ### Auther:
-- **M. Zain Mohsin** from [Team Progomania](https://www.facebook.com/progomania/)
+- **M. Zain Mohsin** from [Team Progomania.](https://www.facebook.com/progomania/)
