@@ -7,7 +7,7 @@ You can see location changes of as many objects as you want. This app is a basic
 
 Just clone the repo and open the ```index.html``` file in editor. Put you Google Maps API Key in the ```Maps``` Tag and Then Open this file in browser. You'll see a Map with 4 markers there. To understand how things are working, continue reading the documantation.
 
-## Open source liberaries Used
+## Open source liberaries used
 The following liberaries have been used for developing LOCUS:
  - [Google Firebase (Real-Time Database)](https://firebase.google.com/docs/database/)
  - [Goolge Maps API](https://cloud.google.com/maps-platform)
@@ -19,16 +19,16 @@ The following liberaries have been used for developing LOCUS:
  Used to show the objects's location being moved. The most basic part of app.
  
 ## Project Structure
-- ```index.html``` 
+### ```index.html``` 
 
 It has just the initialization of a Google Map. Don't Forget to add you own Google Maps API key into the script tag of Maps. This file also has 
 script tag for ```index.js```.
 
-- ```index.js```
+### ```index.js```
 
 It has all the logic related to our maps app. Note that in the code, hardcoded values are used so that you can see the app working right after you clone it. However,
 you can always get your cooridinates from your real-time database and show them on maps as well (Database initialization and usage is present in this file as well.)
-#### i) Firebase Stuff:
+##### i) Firebase Stuff:
 You go to firebase and get your firebase project credentials and paste them to connect your project with LOCUS. 
 Then you get the address of database from where you want to get the coordinates i.e:
 
@@ -38,7 +38,7 @@ You can obtain as many properties of object as you want. Like Name, Info etc. Ho
 You get these properties from database using ```childSnapshot.val().propert-name-saved-in-data-base```
 We'll use these info properties later in Map.
 
-#### ii) Map Stuff:
+##### ii) Map Stuff:
 First few lines are initilizing ones. ```markers``` array holds the info of all the objects which will be drawn on the map. In the code, imaginary values have been used to stuff this array, in real you'll use the real-time data about object retrieved from the Firebase data-base.
 
 Similarly you'll use addintional information (Name, Location) in the ```infoWindowContent``` to make an interactive Marker tooltip on the map.
@@ -47,7 +47,7 @@ Later we loop through the ```markers``` and draw every object on the map accordi
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 ## Inspiration
 
